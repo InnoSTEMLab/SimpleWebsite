@@ -28,10 +28,10 @@ export default function Home() {
                 problem-solving, and creativity—all while having fun!
               </p>
               <Link 
-                href="/get-started" 
+                href="/signup" 
                 className="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg text-xl font-semibold hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl"
               >
-                Get Started
+                Sign Up for Updates
               </Link>
             </div>
             <div className="flex-1 flex justify-center">

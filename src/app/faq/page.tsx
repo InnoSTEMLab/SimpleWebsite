@@ -62,7 +62,7 @@ export default function FAQPage() {
               </summary>
               <div className="p-6 bg-white">
                 <p className="text-gray-600">
-                  Absolutely! We welcome multiple children from the same family. Each child will be placed in the appropriate age group and receive personalized attention. We also offer family discounts for multiple enrollments.
+                  Absolutely! We welcome multiple children from the same family. Each child will be placed in the appropriate age group and receive personalized attention. 
                 </p>
               </div>
             </details>
@@ -126,7 +126,7 @@ export default function FAQPage() {
               </summary>
               <div className="p-6 bg-white">
                 <p className="text-gray-600">
-                  Absolutely! We welcome parents to observe and even participate in special family sessions. We also host regular "Family Robotics Days" where parents can join their children in fun robotics activities and see what they've been learning.
+                  Absolutely! We welcome parents to observe and even participate in special family sessions.
                 </p>
               </div>
             </details>
@@ -142,39 +142,7 @@ export default function FAQPage() {
               </summary>
               <div className="p-6 bg-white">
                 <p className="text-gray-600">
-                  Classes are held after school and on weekends. Ages 6-9 have 2 classes per week (1 hour each), while ages 10-13 have 3 classes per week (1.5 hours each). We offer flexible scheduling and can accommodate different time preferences.
-                </p>
-              </div>
-            </details>
-          </div>
-
-          <div className="border border-gray-200 rounded-lg overflow-hidden">
-            <details className="group">
-              <summary className="flex justify-between items-center p-6 cursor-pointer bg-gray-50 hover:bg-gray-100 transition-colors">
-                <span className="text-xl font-semibold text-gray-900">Do you offer competitions?</span>
-                <svg className="w-6 h-6 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </summary>
-              <div className="p-6 bg-white">
-                <p className="text-gray-600">
-                  Yes! We participate in local and regional robotics competitions. Students can join competition teams where they'll design, build, and program robots to complete specific challenges. These competitions help develop teamwork, problem-solving, and presentation skills.
-                </p>
-              </div>
-            </details>
-          </div>
-
-          <div className="border border-gray-200 rounded-lg overflow-hidden">
-            <details className="group">
-              <summary className="flex justify-between items-center p-6 cursor-pointer bg-gray-50 hover:bg-gray-100 transition-colors">
-                <span className="text-xl font-semibold text-gray-900">What qualifications do your instructors have?</span>
-                <svg className="w-6 h-6 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </summary>
-              <div className="p-6 bg-white">
-                <p className="text-gray-600">
-                  Our instructors are certified robotics educators with backgrounds in engineering, computer science, and education. They have extensive experience working with children and are trained in child development and safety. All instructors undergo background checks and safety training.
+                  Currently, the classes are held on Saturdays 10am-12pm. 
                 </p>
               </div>
             </details>
@@ -190,7 +158,7 @@ export default function FAQPage() {
               </summary>
               <div className="p-6 bg-white">
                 <p className="text-gray-600">
-                  Yes, we maintain small class sizes to ensure personalized attention. Each class has a maximum of 8 students with one instructor and one assistant. This allows us to provide individual guidance and ensure every child gets the support they need.
+                  We maintain small class sizes to ensure personalized attention. This allows us to provide individual guidance and ensure every child gets the support they need.
                 </p>
               </div>
             </details>
@@ -206,7 +174,7 @@ export default function FAQPage() {
               </summary>
               <div className="p-6 bg-white">
                 <p className="text-gray-600">
-                  We understand that children may need to miss classes occasionally. We offer make-up classes within the same week, and we provide online resources and videos so students can catch up on missed material. Please notify us in advance when possible.
+                  We understand that children may need to miss classes occasionally. We can provide online resources and videos so students can catch up on missed material. Please notify us in advance when possible.
                 </p>
               </div>
             </details>
@@ -222,7 +190,7 @@ export default function FAQPage() {
               </summary>
               <div className="p-6 bg-white">
                 <p className="text-gray-600">
-                  Yes! We offer exciting summer robotics camps that run for 1-2 weeks. These intensive programs allow students to work on extended projects and participate in special challenges. Summer camps are a great way to dive deeper into robotics and make new friends.
+                  Yes! We offer summer robotics camps that run for 6-8 weeks. These intensive programs allow students to work on extended projects and participate in special challenges. Summer camps are a great way to dive deeper into robotics and make new friends.
                 </p>
               </div>
             </details>

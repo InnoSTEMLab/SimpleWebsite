@@ -44,7 +44,6 @@ export default function ContactPage() {
                     <a href="mailto:innostemlab@gmail.com" className="text-blue-600 hover:text-blue-700 transition-colors">
                       innostemlab@gmail.com
                     </a>
-                    <p className="text-gray-600 mt-1">We typically respond within 24 hours</p>
                     
                     <div className="mt-4">
                       <h4 className="font-semibold text-gray-900 mb-3">Follow Us</h4>

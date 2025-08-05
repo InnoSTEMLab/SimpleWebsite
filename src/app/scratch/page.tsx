@@ -110,7 +110,11 @@ export default function ScratchPage() {
     const newBlock = {
       ...blockData,
       id: `${blockData.id}-${Date.now()}`,
-      position: { x: e.clientX, y: e.clientY }
+      position: { x: e.clientX, y: e.clientY },
+      values: blockData.params.reduce((acc: any, param: string) => {
+        acc[param] = param;
+        return acc;
+      }, {})
     };
     
     setBlocks([...blocks, newBlock]);
@@ -125,7 +129,17 @@ export default function ScratchPage() {
     code += `void loop() {\n`;
     
     currentBlocks.forEach(block => {
-      code += `  ${block.code}\n`;
+      let blockCode = block.code;
+      
+      // Replace placeholders with actual values
+      if (block.values) {
+        Object.keys(block.values).forEach(param => {
+          const value = block.values[param];
+          blockCode = blockCode.replace(new RegExp(param, 'g'), value);
+        });
+      }
+      
+      code += `  ${blockCode}\n`;
     });
     
     code += `}\n`;
@@ -134,6 +148,23 @@ export default function ScratchPage() {
 
   const removeBlock = (blockId: string) => {
     const newBlocks = blocks.filter(block => block.id !== blockId);
+    setBlocks(newBlocks);
+    generateCode(newBlocks);
+  };
+
+  const updateBlockValue = (blockId: string, param: string, value: string) => {
+    const newBlocks = blocks.map(block => {
+      if (block.id === blockId) {
+        return {
+          ...block,
+          values: {
+            ...block.values,
+            [param]: value
+          }
+        };
+      }
+      return block;
+    });
     setBlocks(newBlocks);
     generateCode(newBlocks);
   };
@@ -147,7 +178,7 @@ export default function ScratchPage() {
     <div className="min-h-screen bg-gray-100">
       <Navigation />
       
-      <div className="flex h-screen pt-16">
+      <div className="flex h-screen ">
         {/* Block Palette */}
         <div className="w-80 bg-white border-r border-gray-300 p-4 overflow-y-auto">
           <h2 className="text-xl font-bold mb-4 text-gray-800">Blocks</h2>
@@ -246,16 +277,17 @@ export default function ScratchPage() {
                     </div>
                   </div>
                 ) : (
-                  <div className="space-y-2">
-                    {blocks.map((block, index) => (
-                      <ScratchBlock
-                        key={block.id}
-                        block={block}
-                        onRemove={() => removeBlock(block.id)}
-                        index={index}
-                      />
-                    ))}
-                  </div>
+                                     <div className="space-y-2">
+                     {blocks.map((block, index) => (
+                       <ScratchBlock
+                         key={block.id}
+                         block={block}
+                         onRemove={() => removeBlock(block.id)}
+                         onValueChange={(param, value) => updateBlockValue(block.id, param, value)}
+                         index={index}
+                       />
+                     ))}
+                   </div>
                 )}
               </div>
             </div>

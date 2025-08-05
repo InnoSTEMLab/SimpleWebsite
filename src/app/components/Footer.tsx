@@ -12,20 +12,18 @@ export default function Footer() {
               Empowering the next generation of innovators through hands-on robotics education.
             </p>
           </div>
-          <div>
-            <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2 text-gray-300">
-              <li><Link href="/" className="hover:text-white transition-colors">Home</Link></li>
-              <li><Link href="/get-started" className="hover:text-white transition-colors">Enroll Now</Link></li>
-              <li><Link href="/about" className="hover:text-white transition-colors">About Us</Link></li>
-              <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
-            </ul>
-          </div>
+                      <div>
+              <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
+              <ul className="space-y-2 text-gray-300">
+                <li><Link href="/" className="hover:text-white transition-colors">Home</Link></li>
+                <li><Link href="/signup" className="hover:text-white transition-colors">Sign Up</Link></li>
+                <li><Link href="/about" className="hover:text-white transition-colors">About Us</Link></li>
+                <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
+              </ul>
+            </div>
                       <div>
               <h3 className="text-xl font-semibold mb-4">Programs</h3>
               <ul className="space-y-2 text-gray-300">
-                <li><Link href="/get-started" className="hover:text-white transition-colors">Ages 6-9</Link></li>
-                <li><Link href="/get-started" className="hover:text-white transition-colors">Ages 10-13</Link></li>
                 <li><Link href="/courses" className="hover:text-white transition-colors">Course Details</Link></li>
                 <li><Link href="/scratch" className="hover:text-white transition-colors">Scratch Programming</Link></li>
                 <li><Link href="/faq" className="hover:text-white transition-colors">FAQ</Link></li>

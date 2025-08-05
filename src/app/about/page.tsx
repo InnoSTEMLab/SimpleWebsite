@@ -180,16 +180,16 @@ export default function AboutPage() {
       {/* Call to Action */}
       <section className="py-20 bg-gradient-to-br from-amber-50 to-orange-50">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-4xl font-bold text-amber-800 mb-6">Ready to Join Our Robotics Family?</h2>
+          <h2 className="text-4xl font-bold text-amber-800 mb-6">Ready to Stay Updated?</h2>
           <p className="text-xl text-gray-700 mb-8">
-            Give your child the opportunity to explore, create, and innovate with our expert-led robotics programs.
+            Sign up to receive updates about our robotics programs, upcoming events, and educational content.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
-              href="/get-started" 
+              href="/signup" 
               className="bg-blue-600 text-white px-8 py-4 rounded-lg text-xl font-semibold hover:bg-blue-700 transition-colors"
             >
-              Enroll Your Child
+              Sign Up for Updates
             </Link>
             <Link 
               href="/contact" 

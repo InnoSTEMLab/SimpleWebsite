@@ -10,12 +10,14 @@ interface ScratchBlockProps {
     color: string;
     code: string;
     params: string[];
+    values?: { [key: string]: string };
   };
   onRemove: () => void;
+  onValueChange: (param: string, value: string) => void;
   index: number;
 }
 
-export default function ScratchBlock({ block, onRemove, index }: ScratchBlockProps) {
+export default function ScratchBlock({ block, onRemove, onValueChange, index }: ScratchBlockProps) {
   const [isHovered, setIsHovered] = useState(false);
 
   const getBlockShape = () => {
@@ -50,7 +52,7 @@ export default function ScratchBlock({ block, onRemove, index }: ScratchBlockPro
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       style={{
-        transform: `translateX(${index * 20}px)`,
+        transform: `translateX(${index * 2}px)`,
         zIndex: index
       }}
     >
@@ -65,8 +67,9 @@ export default function ScratchBlock({ block, onRemove, index }: ScratchBlockPro
             <input
               type="text"
               placeholder={param}
-              className="bg-transparent text-white placeholder-white placeholder-opacity-70 text-sm w-full outline-none"
-              defaultValue={param}
+              className="bg-transparent text-black placeholder-white placeholder-opacity-70 text-sm w-full outline-none"
+              value={block.values?.[param] || param}
+              onChange={(e) => onValueChange(param, e.target.value)}
             />
           </div>
         ))}
