@@ -4,7 +4,7 @@
 
 ### **🔧 What I Fixed:**
 
-1. **Node.js Version**: Set to stable version 18.18.0 via `.nvmrc` and `netlify.toml`
+1. **Node.js Version**: Set to stable version 18.17.1 via `.nvmrc` and `netlify.toml`
 2. **Static Export**: Configured Next.js for static site generation
 3. **Contact Form**: Converted to use Netlify Forms (no backend needed!)
 4. **Build Configuration**: Set up proper Netlify build settings
@@ -34,7 +34,7 @@ git push origin main
 ### **Step 3: Deploy Settings (Auto-configured)**
 - **Build command**: `npm run build` ✅
 - **Publish directory**: `out` ✅  
-- **Node.js version**: 18.18.0 ✅
+- **Node.js version**: 18.17.1 ✅
 
 ### **Step 4: Enable Form Handling**
 1. In Netlify dashboard, go to "Forms" tab
@@ -94,7 +94,7 @@ Your site will be available at: `https://your-site-name.netlify.app`
 ### **Common Issues:**
 
 1. **Build fails with Node.js error:**
-   - Check `.nvmrc` file exists with `18.18.0`
+   - Check `.nvmrc` file exists with `18.17.1`
    - Verify `netlify.toml` has correct Node version
 
 2. **Contact form not working:**
