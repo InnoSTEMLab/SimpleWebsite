@@ -26,13 +26,13 @@ export default function Home() {
                 With hands-on projects and expert guidance, your child will develop valuable skills in coding, 
                 problem-solving, and creativity—all while having fun!
               </p>
-              <a 
+                            <a
                 href="https://forms.gle/1wzQsam8CtdphNgAA"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg text-xl font-semibold hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl"
               >
-                Sign Up for Updates
+                Sign Up
               </a>
             </div>
             <div className="flex-1 flex justify-center">

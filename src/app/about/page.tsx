@@ -189,7 +189,7 @@ export default function AboutPage() {
               href="/signup" 
               className="bg-blue-600 text-white px-8 py-4 rounded-lg text-xl font-semibold hover:bg-blue-700 transition-colors"
             >
-              Sign Up for Updates
+              Sign Up
             </Link>
             <Link 
               href="/contact" 

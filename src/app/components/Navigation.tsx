@@ -54,14 +54,14 @@ export default function Navigation() {
           >
             Contact
           </Link>
-          <a 
-            href="https://forms.gle/1wzQsam8CtdphNgAA"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors font-bold"
-          >
-            Sign Up for Updates
-          </a>
+                           <a
+                   href="https://forms.gle/1wzQsam8CtdphNgAA"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors font-bold"
+                 >
+                   Sign Up
+                 </a>
         </div>
       </div>
     </nav>
