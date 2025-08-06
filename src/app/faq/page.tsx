@@ -1,5 +1,3 @@
-import Link from 'next/link';
-import Image from 'next/image';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
@@ -30,7 +28,7 @@ export default function FAQPage() {
               </summary>
               <div className="p-6 bg-white">
                 <p className="text-gray-600">
-                  Your child will develop essential STEM skills including programming, problem-solving, critical thinking, and creativity. They'll learn to build and program robots, work with sensors and circuits, and participate in hands-on projects that make learning fun and engaging.
+                  Your child will develop essential STEM skills including programming, problem-solving, critical thinking, and creativity. They&apos;ll learn to build and program robots, work with sensors and circuits, and participate in hands-on projects that make learning fun and engaging.
                 </p>
               </div>
             </details>
@@ -202,21 +200,17 @@ export default function FAQPage() {
           <div className="bg-blue-50 rounded-2xl p-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Still have questions?</h2>
             <p className="text-gray-600 mb-6">
-              Can't find the answer you're looking for? Please contact our friendly team and we'll get back to you as soon as possible.
+              Can&apos;t find the answer you&apos;re looking for? Please contact our friendly team and we&apos;ll get back to you as soon as possible.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link 
-                href="/contact" 
+              <a 
+                href="https://forms.gle/1wzQsam8CtdphNgAA"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
               >
-                Contact Us
-              </Link>
-              <Link 
-                href="/get-started" 
-                className="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
-              >
-                Enroll Now
-              </Link>
+                Sign Up for Updates
+              </a>
             </div>
           </div>
         </div>

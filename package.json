@@ -9,14 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@react-email/render": "^1.1.4",
-    "@supabase/supabase-js": "^2.53.0",
-    "@types/bcryptjs": "^2.4.6",
-    "bcryptjs": "^3.0.2",
     "next": "15.4.5",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "resend": "^4.7.0"
+    "react-hook-form": "^7.51.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

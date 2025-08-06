@@ -34,7 +34,7 @@ export default function AboutPage() {
                   What started as a volunteer-driven afterschool program for the Nepali community quickly grew into something more. The overwhelming support and enthusiasm from parents and students inspired us—five passionate co-founders—to build an organization that could bring hands-on robotics education to more children across the United States.
                 </p>
                 <p>
-                  Today, we're proud to offer affordable, beginner-friendly robotics programs that teach kids how to assemble, code, and bring their ideas to life. Whether it's a simple line-following robot or a creative group project, our goal is to nurture the next generation of makers, inventors, and problem-solvers—one robot at a time.
+                  Today, we&apos;re proud to offer affordable, beginner-friendly robotics programs that teach kids how to assemble, code, and bring their ideas to life. Whether it&apos;s a simple line-following robot or a creative group project, our goal is to nurture the next generation of makers, inventors, and problem-solvers—one robot at a time.
                 </p>
               </div>
             </div>
@@ -57,7 +57,7 @@ export default function AboutPage() {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-purple-800 mb-6">Our Mission & Values</h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              We're committed to fostering creativity, critical thinking, and a love for technology in every child we teach.
+              We&apos;re committed to fostering creativity, critical thinking, and a love for technology in every child we teach.
             </p>
           </div>
 
@@ -82,7 +82,7 @@ export default function AboutPage() {
               </div>
               <h3 className="text-2xl font-semibold text-teal-800 mb-4">Education</h3>
               <p className="text-gray-700">
-                We're dedicated to making complex robotics concepts accessible and engaging for children of all ages and skill levels.
+                We&apos;re dedicated to making complex robotics concepts accessible and engaging for children of all ages and skill levels.
               </p>
             </div>
 
@@ -107,7 +107,7 @@ export default function AboutPage() {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-indigo-800 mb-6">Our Teaching Approach</h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              We've developed a unique methodology that combines hands-on learning with age-appropriate curriculum design.
+              We&apos;ve developed a unique methodology that combines hands-on learning with age-appropriate curriculum design.
             </p>
           </div>
 

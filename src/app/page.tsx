@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Image from 'next/image';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
@@ -18,7 +17,7 @@ export default function Home() {
                 InnoSTEMLab Robotics Course
               </h1>
               <p className="text-2xl lg:text-3xl font-semibold text-gray-700 mb-6">
-                Unlock Your Child's Potential with Robotics!
+                Unlock Your Child&apos;s Potential with Robotics!
               </p>
               <p className="text-lg lg:text-xl text-gray-600 mb-8">
                 Is your child ready to explore the world of robotics? 
@@ -27,12 +26,14 @@ export default function Home() {
                 With hands-on projects and expert guidance, your child will develop valuable skills in coding, 
                 problem-solving, and creativity—all while having fun!
               </p>
-              <Link 
-                href="/signup" 
+              <a 
+                href="https://forms.gle/1wzQsam8CtdphNgAA"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg text-xl font-semibold hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl"
               >
                 Sign Up for Updates
-              </Link>
+              </a>
             </div>
             <div className="flex-1 flex justify-center">
               <Image 

@@ -32,19 +32,19 @@ export default function ContactPage() {
 
     try {
       // Use Netlify Forms instead of custom API
-      const formParams = new URLSearchParams();
-      formParams.append('form-name', 'contact');
-      formParams.append('firstName', data.firstName);
-      formParams.append('lastName', data.lastName);
-      formParams.append('email', data.email);
-      formParams.append('phone', data.phone || '');
-      formParams.append('subject', data.subject);
-      formParams.append('message', data.message);
+      const formData = new FormData();
+      formData.append('form-name', 'contact');
+      formData.append('firstName', data.firstName);
+      formData.append('lastName', data.lastName);
+      formData.append('email', data.email);
+      formData.append('phone', data.phone || '');
+      formData.append('subject', data.subject);
+      formData.append('message', data.message);
 
       const response = await fetch('/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: formParams.toString()
+        body: new URLSearchParams(formData as any).toString()
       });
 
       if (response.ok) {
@@ -68,7 +68,7 @@ export default function ContactPage() {
       <Navigation />
 
       {/* Hidden form for Netlify */}
-      <form name="contact" data-netlify="true" style={{ display: 'none' }}>
+      <form name="contact" netlify hidden>
         <input type="text" name="firstName" />
         <input type="text" name="lastName" />
         <input type="email" name="email" />
