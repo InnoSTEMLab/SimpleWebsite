@@ -6,6 +6,9 @@
   NODE_VERSION = "20"
   NPM_FLAGS = "--prefer-offline --no-audit"
 
+[functions]
+  directory = "netlify/functions"
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
